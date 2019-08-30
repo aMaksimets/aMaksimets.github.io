@@ -1,1 +1,1 @@
-## Development Project 1 blog using git pages
+## DevProject 1 Blog
