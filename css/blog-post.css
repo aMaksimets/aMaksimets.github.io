@@ -1,8 +1,433 @@
-/*!
- * Start Bootstrap - Blog Post (https://startbootstrap.com/template-overviews/blog-post)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
- */
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GeoSans";
+    src: url("../fonts/GeosansLight.ttf");
+}
+
+@font-face {
+    font-family: "Hamilyn";
+    src: url("../fonts/Hamilyn.otf");
+}
+
+html,
 body {
-  padding-top: 56px;
+    margin: 0px;
+    background-color: #111111;
+    color: white;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+#bannerSectionOut {
+    background: url("../Images/2828cnn3frff.jpg") center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+#bannerSectionText {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    height: 166px;
+    margin: auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#bannerSectionText h1 {
+    font-size: 93px;
+    margin: 0px;
+    font-weight: normal;
+    font-family: "Hamilyn", cursive;
+    text-shadow: #151515 2px 2px 2px;
+}
+
+@media only screen and (max-width: 442px) {
+    #bannerSectionText h1 {
+        font-size: 73px;
+    }
+}
+
+.highlight {
+    color: #00ace6;
+}
+
+.bannerCaption {
+    display: inline-block;
+    font-size: 26px;
+    font-family: "GeoSans", Arial, Helvetica, sans-serif;
+    text-shadow: #151515 1px 1px;
+}
+
+.imageHeader {
+    text-align: center;
+}
+
+.imageButton {
+    color: white;
+    width: 200px;
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.imageButton:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.imageButton:hover {
+    color: #00a2f1;
+    cursor: pointer;
+}
+
+#bioSec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#bioDesc{
+    font-size: 14px;
+}
+
+.bioImage{
+    border-radius: 50%;
+    max-height: 280px;
+    border: solid 5px #00ace6;
+}
+
+#bioText{
+    display: inline-block;
+    max-width: 500px;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+#aboutSec {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #0e0e0e;
+}
+
+.secHeader {
+    margin: 0px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 29px;
+}
+
+.secDesc {
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #00ace6;
+    width: 200px;
+}
+
+#aboutPill {
+    width: 258px;
+    height: 178px;
+    border-radius: 3px;
+    line-height: 178px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#aboutPill h4 {
+    text-align: center;
+    font-size: 22px;
+    vertical-align: middle;
+    margin: 0px;
+    font-family: 'GeoSans', sans-serif;
+    text-shadow: 1px 1px black;
+    background-color: rgba(0, 2, 21, 0.58);
+}
+
+.webDev {
+    background: url("../Images/photo-1454165205744-3b78555e5572.jpg");
+    background-size: cover;
+}
+
+.penTest {
+    background: url("../Images/photo-1504139969750-3244f9258fce.jpg");
+    background-size: cover;
+}
+
+.miscImage {
+    background: url("../Images/photo-1504639725590-34d0984388bd.jpg");
+    background-size: cover;
+}
+
+#aboutRow {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#knowledgeSec {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#knowledgeInner {
+    width: 100%;
+    background: url("../Images/photo-1481573272453-28284d4834b3.jpg") center center fixed;
+    background-size: cover;
+}
+
+#knowledgeInner h3 {
+    padding-top: 80px;
+}
+
+.knowledgePill {
+    display: inline-block;
+    background-color: #151515;
+    box-shadow: 3px 3px 5px black;
+    padding: 10px;
+    min-width: 108px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#knowledgeList {
+    max-width: 60%;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+#portSec {
+    padding-top: 50px;
+}
+
+#portSecInner {
+    background-color: #0e0e0e;
+    text-align: center;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#portSecInner::-webkit-scrollbar-track {
+    background-color: #0e0e0e;
+}
+
+#portSecInner::-webkit-scrollbar {
+    background-color: #0e0e0e;
+    height: 10px;
+}
+
+#portSecInner::-webkit-scrollbar-thumb {
+    background-color: #00ace6;
+}
+
+#portSecInner h5 {
+    margin: 0px;
+}
+
+.extended {
+    width: 250px;
+}
+
+.portPill {
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.portPill:hover {
+    width: 400px;
+}
+
+.portPillDesc {
+    padding-top: 50px;
+}
+
+.portPillDesc p {
+    text-align: left;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 180px;
+    font-size: 14px;
+}
+
+.portPillDesc span {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+.portPillDesc h5 {
+    font-size: 25px;
+    color: #00ace6;
+    font-family: "GeoSans", Arial, Helvetica, sans-serif;
+}
+
+.portLink {
+    color: #00ace6;
+    text-decoration: none;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.portLink:hover {
+    color: white;
+}
+
+.portLink a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: underline
+}
+
+.link:hover {
+    color: #00ace6;
+}
+
+.link a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+#contactMe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contactIcons {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+#contactIcons img {
+    height: 90px;
+    width: 90px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+#contactTablet {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#footerSec {
+    height: 60px;
+    background: #0e0e0e;
+    line-height: 60px;
+    text-align: center;
+}
+
+#footerSec span {
+    vertical-align: middle;
+    font-style: italic;
+    color: #bdbdbd;
+    font-size: 15px;
+}
+
+#contactTablet a {
+    text-decoration: none;
+}
+
+
+/* MOBILE CSS */
+@media only screen and (max-width: 414px) {
+    .bioImage {
+        border-radius: 10%;
+        max-height: 150px;
+        border: solid 4px #00ace6;
+    }
+    #bioText{
+        margin-top: 8px;
+    }
+    #contactIcons img{
+        height: 70px;
+        width: 70px;
+    }
+    #bioSec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #aboutSec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #knowledgeInner h3 {
+        padding-top: 50px;
+    }
+    #knowledgeList {
+        padding-bottom: 50px;
+        max-width: none;
+    }
+    .knowledgePill{
+        display: inline-block;
+        padding: 10px;
+        min-width: 100px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .secDesc{
+        font-size: 15px;
+    }
 }
