@@ -1,11 +1,11 @@
 html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: "Roboto Mono" !important;
-      background: #000;
-      color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Mono" !important;
+    background-color: #00bfff;
+    color: #ffffff;
 }
 
 .git-link {
