@@ -83,6 +83,10 @@ html, body {
 	width: 50;
 }
 
+.main-pic:hover {
+	
+}
+
 #footer {
   position: absolute;
   bottom: 0;
