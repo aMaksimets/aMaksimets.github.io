@@ -32,6 +32,10 @@
 </head>
 
 <body>
+
+  <div id="page-container">
+  <div id="content-wrap">
+
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJW9D4K"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -43,7 +47,7 @@
           </span>
           <ul id="menu">
               <li><a href="index.html">home<span>.</span></a></li>
-              <li><a href="stuff.html">stuff<span>.</span></a></li>
+              <li><a href="stuff.html">projects<span>.</span></a></li>
               <li><a href="contact.html">contact<span>.</span></a></li>
           </ul>
           <div id="toggle">
@@ -69,29 +73,33 @@
         <div class="container">
        
               <!-- Title -->
-              <h1>Stuff im working on</h1>
+              <h1>What I'm working on</h1>
               <!-- Date/Time -->
               <p>Posted on Sep 12, 2019 at 10:00 AM</p>
               <!-- change. query db instead -->
               <hr>
               <!-- Preview Image -->
               <!-- <img class="img-fluid rounded" src="http://placehold.it/1200x300" alt=""> -->
+
+              <!-- style img height -->
               <div class="main-img">
                 <img class="gif-term" src="media/img/terminal.gif" alt="gif">
               </div>
-              
-              <hr>
 
+              <br><br>
+              <h1>Projects</h1>
+              <hr>
               <!-- Content items -->
               <!-- return from sql -->
+              <!-- hoover css -->
               <div class="project">
-                <h3>Imageboard using nodejs mysql</h3>
-                <p class="abstract">webapp using written in nodejs, sql db...</p>
-                <p>RestAPI webapp</p>
+                <h3><a href="https://github.com/blkhood/NodeChan">NodeChan - Imageboard for the 21st century</a></h3>
+                <p class="tags">#nodejs #mysql #php #restapi</p><br>
+                <p>Imageboard (inspired by <a href="https://www.2chan.net/">2chan</a>) made for development project 1 unit as part of HD requirement.</p>
               <hr>
-                <h3>Text based rougelike rpg</h3>
-                <p class="abstract">.Net application in c#</p>
-                <p>CLI based dungeon crawler - alpha</p>
+                <h3>SwinAdventure - Textbased rpg</h3>
+                <p class="tags">#cSharp #.net #swingame</p><br>
+                <p>Textbased dungeon crawler designed with the SwinGame development engine, part of object orientated programming unit at Swinburne.</p>
               <hr>
               </div>
             <!-- Sidebar Widgets Column -->
@@ -143,43 +151,16 @@
 
         <!------------------------------- /content ------------------------------>
         <!------------------------------- footer -------------------------------->
-
-        <div class="footer">
-
-            <div class="collab">
-                <div class="row">
-                    <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
-
-                </div>
-            </div>
-
-            <div class="hr">
-                <div class="row"></div>
-            </div>
-
-            <div class="info">
-                <div class="row">
-
-                    <div class="link" id="personal">
-                        <p>find me on github</p>
-                        <h4>@blkhood</h4>
-                        <br>
-                        <br>
-                    </div>
-
-                    <div class="mail" id="address">
-                        <p>say hi</p>
-                        <h4>maskimetsalexey@gmail.com</h4>
-                        <br>
-                        <br>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
-        <!------------------------------- /footer -------------------------------->
+        <footer id="footer">
+          <div class="copy-container">
+            <p>Copyright &copy; Alex Maksimets</p>
+          </div>
+        </footer>
 
+        <!------------------------------- /footer -------------------------------->
+  </div>>
 </body>
 
 </html>
