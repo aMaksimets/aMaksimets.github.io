@@ -22,11 +22,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="contacts page">
       <meta name="author" content="alex">
+      <script type="js/animations.js"></script>
       <title>Alex - about</title>
    </head>
-   
-   <body>
-      <div id="page-container">
+
+<body>
+   <div id="page-container">
          <div id="content-wrap">
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJW9D4K"
                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -81,7 +82,7 @@
                         </div>
                      </div>
                         <div class="skill-description">
-                           "I know the language decently well. This includes the basic knowledge of OOP aswell as it's .NET framework"
+                           <p>I know the language decently well, this includes the basic knowledge of OOP aswell as the .NET framework.</p>
                         </div>
                   </div>
                   <div class="skill">
@@ -92,7 +93,7 @@
                         </div>
                      </div>
                         <div class="skill-description">
-                           I have a good knowledge of HTML, CSS, JavaScript for front-end development. I also have a good understanding and sum of experiance with JSON, BOOTSTRAP and meriad of other frameworks/technologies.
+                           <p>I have good experiance with HTML, CSS and JavaScript for front-end development. I also have a bit of experiance with JSON, BOOTSTRAP and other frameworks for JS [and webdevelopment in general].</p>
                         </div>
                      </div>
                   <div class="skill">
@@ -103,31 +104,28 @@
                         </div>
                         </div>
                         <div class="skill-description">
-                           "I have experiance with PHP, NodeJS and decent knowledge of MySQL and subsequently the SQL language (which I'm very familiar with)."
+                           <p>I have a good grasp of PHP, NodeJS and MySQL (SQL) for back-end webdevelopment.</p>
                         </div>
                   </div>
                   
                   <div class="skill">
                      <div class="skill-heading">
                         <div class="progress-bar" style="width:90%"></div>
-                        <div class="skill-name">
-                           <h6> Ruby</h6>
+                     </div>
+                     <button class="collapsible">Ruby</button>
+                        <div class="content">
+                          <p>My experiance with Ruby has been through high-disction task for university course work and I believe I have a grasp on the language that covers all of it's basics and extends to custom frameworks (such as SDKs for game-development) and the Rails framework.</p>
                         </div>
-                     </div>
-                     <div class="skill-description">
-                        "I have a good knowledge of the Ruby programming language interms of both structured and object related paradigms, I also have had a brief encounter with the Rails framwork for webdevelopment."
-                     </div>
                   </div>
+
                   <div class="skill">
                      <div class="skill-heading">
                         <div class="progress-bar" style="width:90%"></div>
-                        <div class="skill-name">
-                           <h6>Networking : CCNA</h6>
+                     </div>
+                        <button class="collapsible">Networking : CCNA</button>
+                        <div class="content">
+                          <p>I'm also a CCNA R&S (Routing & Switching) certfied network technician, with experiance in creating & managing low-scale, managing servers and creating/managing active-directory services on Windows 2008 Server. I also have a good understanding of network virtualization with Packet-tracker and GNS3.</p>
                         </div>
-                     </div>
-                     <div class="skill-description">
-                        
-                     </div>
                   </div>
 
                   <h3>Education:</h3>
@@ -146,7 +144,23 @@
                <p>Copyright &copy; Alex Maksimets</p>
             </div>
          </footer>
-
       </div>
-   </body>
+
+      <script>
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+
+         for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var content = this.nextElementSibling;
+             if (content.style.maxHeight){
+               content.style.maxHeight = null;
+             } else {
+               content.style.maxHeight = content.scrollHeight + "px";
+             } 
+           });
+         }
+      </script>
+  </body>
 </html>
