@@ -67,7 +67,8 @@
                   <a href="https://www.linkedin.com/in/alexey-maksimets-673940173/"><li class="fa fa-linkedin" style="font-size:35px; color:black" class="my-linkedin"></li></a>
                </ul>
             </div>
-               <!-- <h1 class="me">Thats me !</h1> -->
+            
+            <!-- <h1 class="me">Thats me !</h1> -->
             <div class="about-container">
                <h3>About me</h3>
                   <p>Im a CS student in my 2nd year at Swinburne University in Melbourne, Australia. I have a srious passion for webappp development and OOP programming.</p>
@@ -125,42 +126,42 @@
                         <button class="collapsible">Networking : CCNA</button>
                         <div class="content">
                           <p>I'm also a CCNA R&S (Routing & Switching) certfied network technician, with experiance in creating & managing low-scale, managing servers and creating/managing active-directory services on Windows 2008 Server. I also have a good understanding of network virtualization with Packet-tracker and GNS3.</p>
-                        </div>
                   </div>
-
-                  <h3>Education:</h3>
-                     <ul>
-                        <li>Swinburne University of Technology: 2019 - Present <br>Bachelor of Computer Science</li>
-                        <li>Swinburne University of Technology: 2018 - 2018 <br>Cert IV Systems Technology</li>
-                     </ul>
                </div>
+
+               <h3>Education:</h3>
+               <ul>
+                  <li>Swinburne University of Technology: 2019 - Present <br>Bachelor of Computer Science</li>
+                  <li>Swinburne University of Technology: 2018 - 2018 <br>Cert IV Systems Technology</li>
+               </ul>
             </div>
+         </div>
          <br>
             
-         </div>
-
-         <footer id="footer">
-            <div class="copy-container">
-               <p>Copyright &copy; Alex Maksimets</p>
-            </div>
-         </footer>
       </div>
 
-      <script>
-         var coll = document.getElementsByClassName("collapsible");
-         var i;
+      <footer id="footer">
+         <div class="copy-container">
+            <p>Copyright &copy; Alex Maksimets</p>
+         </div>
+      </footer>
+   </div>
 
-         for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-             this.classList.toggle("active");
-             var content = this.nextElementSibling;
-             if (content.style.maxHeight){
-               content.style.maxHeight = null;
-             } else {
-               content.style.maxHeight = content.scrollHeight + "px";
-             } 
-           });
-         }
-      </script>
-  </body>
+   <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+         coll[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var content = this.nextElementSibling;
+         if (content.style.maxHeight){
+         content.style.maxHeight = null;
+         } else {
+         content.style.maxHeight = content.scrollHeight + "px";
+         } 
+         });
+      }
+   </script>
+</body>
 </html>
