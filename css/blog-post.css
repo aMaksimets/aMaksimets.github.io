@@ -1,19 +1,19 @@
-*{
-	padding:0;
-	margin:0;
-}
-
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: "Roboto Mono" !important;
-    background-color: #ffffff;
-    color: #ffffff;
-    position: relative;
+    background: #0f0f0f !important;
+    color: #fff !important;
 }
 
+.box-container {
+/*  background-image: linear-gradient(to bottom, rgba(211,211,211,1), rgba(1,0,0,1));*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .git-link {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -41,6 +41,10 @@ html, body {
 	max-height:100%;
 }
 
+.contact-div {
+  text-align: center;
+}
+
 .contact-img {
 	max-width:100%;
 	max-height:100%;
@@ -48,34 +52,11 @@ html, body {
 	background-size: cover;
 }
 
-.links li{
-
+ul.links {
+  padding-inline-start: 0px;
 }
 
-.container-main {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1140px;
-}
-
-.container-self {
-	float: left;
-	width: 40%;
-	position: relative;
-}
-
-.about-container {
-	width: 60%;
-	float: right;
-	position: relative;
-	right: 20px;
-}
-
-.main-pic {
-	/*display: inline-block;*/
-	max-width: 90%;
-	border: 0.2em solid black;
+.about {
 }
 
 .about-me {
@@ -87,23 +68,23 @@ html, body {
 	
 }
 
+.page-header {
+  height: 100px;
+}
+
 .skill {
 	padding-bottom: 10px;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+.skill skill-heading {
+  height: 20px;
 }
 
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
+/*#content-wrap {
+  padding-bottom: 2.5rem;
+}*/
 
-#page-container {
-  position: relative;
+#wrapper {
   min-height: 100vh;
 }
 .active, .skill-collapse:hover {
@@ -112,7 +93,6 @@ html, body {
 
 .collapsible {
   background-color: #777;
-  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -128,7 +108,6 @@ html, body {
 
 .collapsible:after {
   content: '\002B';
-  color: white;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -136,14 +115,6 @@ html, body {
 
 .active:after {
   content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
 }
 
 /* icon bob */
@@ -165,16 +136,16 @@ html, body {
 
 /*--------------- navigation --------------- */
 nav {
-      width: 100%;
-      background: #0f0f0f;
-      height: 80px;
-      z-index: 1;
-      max-width:100%;
-	  max-height:100%;
-	  position: relative;
-      z-index: 1;
-      max-width:100%;
-      max-height:100%;
+  width: 100%;
+  background: #0f0f0f;
+  height: 80px;
+  z-index: 1;
+  max-width:100%;
+	max-height:100%;
+	position: relative;
+  z-index: 1;
+  max-width:100%;
+  max-height:100%;
 }
 
 nav #brand {
@@ -225,7 +196,7 @@ nav #menu li a:hover {
 #toggle {
       position: absolute;
       right: 30px;
-      top: 20px;
+      top: 18px;
       font-weight: 300;
       z-index: 2;
       width: 30px;
@@ -235,11 +206,38 @@ nav #menu li a:hover {
       transition: all 0.3s ease-out;
       visibility: hidden;
       opacity: 0;
-      color: white;
+      /*color: white;*/
 }
 
-#toggle:checked {
-	
+#resize.active {
+      visibility: visible;
+      opacity: 1;
+}
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+            margin-right: 4px;
+      }
+
+      nav #brand {
+            margin-left: 24px;
+      }
+
+      #menu a {
+            font-size: 20px;
+            font-weight: 300;
+      }
+
+      #resize li span {
+            font-weight: bolder;
+      }
+
+      nav #menu {
+            display: none;
+      }
 }
 
 .close-btn {
@@ -290,26 +288,87 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-      color: #fff;
+      /*color: #fff;*/
 }
 
 #resize #menu li a:hover {
       text-decoration: none;
 }
 
-#resize.active {
-      visibility: visible;
-      opacity: 1;
-}
-
-/*--------------- footer section --------------- */
+/*--------------- container section --------------- */
 
 .about {
-      height: 300px;
-      margin-top: 30px;
+      height: 400px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  object-fit: contain;
+/*  background-color: #0f0f0f;*/
 }
 
 .copy-container {
-	text-align: center;
-    right: 80px;
+  text-align: center;
+  right: 80px;
+}
+
+.container-left {
+    width: 45%;
+    height: 100%;
+    float: left;
+    object-fit: contain;
+    margin-right: 10px;
+    position: relative;
+}
+
+.my-pic {
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.container-right {
+  margin-left: 15%;
+/*  width: 60%;
+  float: right;
+  position: relative;
+  right: 20px;*/
+}
+
+.container-bot{
+  clear: both;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  line-height: 1; 
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  padding: 20px 20px;
+}
+
+.box-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box-title hr {
+  width: 100px;
+}
+
+
+/*--------------- footer section --------------- */
+
+#footer {
+  width: 100%;
+  height: 2.5rem;
 }
