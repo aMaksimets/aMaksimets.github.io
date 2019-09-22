@@ -1,6 +1,12 @@
 ## My website
+my amp {google} optimized site.
 
-TODO
+Done
+----
+* ~~update to amp~~
+<br>
+ToDo
 ----
 -menu navigation ; menu popup on mobile (mobile support)
--db support
+* link sql db (azure)
+* 
